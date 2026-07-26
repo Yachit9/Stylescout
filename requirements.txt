@@ -1,0 +1,7 @@
+firecrawl-py
+mcp
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+groq

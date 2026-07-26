@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleScout</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">MULTI-STORE FASHION SEARCH</p>
+      <h1>Find the right style, at the right price.</h1>
+      <p class="intro">Search Amazon and Flipkart from one place. Results below are source data; the next milestone turns them into ranked recommendations.</p>
+      <form id="search-form">
+        <label>What are you looking for?<input id="query" required minlength="2" placeholder="Linen shirt for men" /></label>
+        <div class="row">
+          <label>Size<input id="size" placeholder="L" /></label>
+          <label>Budget (₹)<input id="budget" type="number" min="100" placeholder="2300" /></label>
+        </div>
+        <button>Find products</button>
+      </form>
+      <section id="status" aria-live="polite"></section>
+      <pre id="results" hidden></pre>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

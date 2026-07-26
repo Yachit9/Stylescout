@@ -1,0 +1,10 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #1f2937; background: #f6f7f4; }
+body { margin: 0; } main { max-width: 760px; margin: 0 auto; padding: 72px 24px; }
+.eyebrow { color: #8b4513; font-size: .75rem; letter-spacing: .12em; font-weight: 700; }
+h1 { font-size: clamp(2.25rem, 7vw, 4.6rem); line-height: .98; margin: 12px 0 20px; }
+.intro { max-width: 620px; line-height: 1.6; }
+form { margin: 32px 0 20px; padding: 24px; background: white; border-radius: 16px; box-shadow: 0 5px 30px #0000000a; }
+label { display: grid; gap: 7px; font-weight: 650; } input { box-sizing: border-box; width: 100%; border: 1px solid #d1d5db; border-radius: 8px; padding: 12px; margin-bottom: 16px; font: inherit; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; } button { border: 0; border-radius: 8px; padding: 13px 18px; background: #1f5137; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+#status { min-height: 28px; } pre { overflow: auto; white-space: pre-wrap; background: #171717; color: #e5e7eb; padding: 20px; border-radius: 12px; line-height: 1.5; }
+@media (max-width: 520px) { .row { grid-template-columns: 1fr; gap: 0; } }
