@@ -53,7 +53,7 @@ def search(request: SearchRequest) -> dict[str, object]:
         # 1. Firecrawl Search: query -> result URLs
         scraped_pages=search_and_scrape_store_products(
             query=search_query,
-            per_store_limit=3,
+            per_store_limit=2,
         )
 
         if not scraped_pages:

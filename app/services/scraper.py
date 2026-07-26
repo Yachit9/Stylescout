@@ -18,20 +18,12 @@ STORES = {
     "Myntra": "myntra.com",
     "AJIO": "ajio.com",
     "Snitch": "snitch.com",
-    "Red Tape": "redtape.com",
-    "Allen Solly": "allensolly.com",
-    "Arrow": "arrow1851.com",
-    "Banana Club": "bananaclub.co.in",
-    "H&M": "hm.com",
-    "The Souled Store": "thesouledstore.com",
-    "Fuaark": "fuaark.com",
-    "5feet11": "5feet11.com",
 }
 
 
 def search_and_scrape_store_products(
     query: str,
-    per_store_limit: int = 3,
+    per_store_limit: int = 2,
     max_markdown_chars: int = 6000,
 ) -> list[dict]:
     """

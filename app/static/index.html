@@ -13,15 +13,13 @@
       <p class="intro">Search Amazon and Flipkart from one place. Results below are source data; the next milestone turns them into ranked recommendations.</p>
       <form id="search-form">
         <label>What are you looking for?<input id="query" required minlength="2" placeholder="Linen shirt for men" /></label>
-        <div class="row">
-          <label>Size<input id="size" placeholder="L" /></label>
-          <label>Budget (₹)<input id="budget" type="number" min="100" placeholder="2300" /></label>
-        </div>
         <button>Find products</button>
       </form>
       <section id="status" aria-live="polite"></section>
-      <pre id="results" hidden></pre>
+      <section id="results" hidden></section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
     <script src="/static/app.js"></script>
   </body>
 </html>

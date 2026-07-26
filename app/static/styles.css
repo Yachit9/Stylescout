@@ -1,10 +1,157 @@
-:root { font-family: Inter, system-ui, sans-serif; color: #1f2937; background: #f6f7f4; }
-body { margin: 0; } main { max-width: 760px; margin: 0 auto; padding: 72px 24px; }
-.eyebrow { color: #8b4513; font-size: .75rem; letter-spacing: .12em; font-weight: 700; }
-h1 { font-size: clamp(2.25rem, 7vw, 4.6rem); line-height: .98; margin: 12px 0 20px; }
-.intro { max-width: 620px; line-height: 1.6; }
-form { margin: 32px 0 20px; padding: 24px; background: white; border-radius: 16px; box-shadow: 0 5px 30px #0000000a; }
-label { display: grid; gap: 7px; font-weight: 650; } input { box-sizing: border-box; width: 100%; border: 1px solid #d1d5db; border-radius: 8px; padding: 12px; margin-bottom: 16px; font: inherit; }
-.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; } button { border: 0; border-radius: 8px; padding: 13px 18px; background: #1f5137; color: white; font: inherit; font-weight: 700; cursor: pointer; }
-#status { min-height: 28px; } pre { overflow: auto; white-space: pre-wrap; background: #171717; color: #e5e7eb; padding: 20px; border-radius: 12px; line-height: 1.5; }
-@media (max-width: 520px) { .row { grid-template-columns: 1fr; gap: 0; } }
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f2937;
+  background: #f6f7f4;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.eyebrow {
+  color: #8b4513;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 7vw, 4.6rem);
+  line-height: 0.98;
+  margin: 12px 0 20px;
+}
+
+.intro {
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+form {
+  margin: 32px 0 20px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 30px #0000000a;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  font-weight: 650;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 18px;
+  background: #1f5137;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #163b28;
+}
+
+#status {
+  min-height: 28px;
+  color: #4b5563;
+}
+
+/* Replaces the old pre block. */
+#results {
+  margin-top: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 5px 30px #0000000a;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+#results h1,
+#results h2,
+#results h3 {
+  color: #1f5137;
+  line-height: 1.2;
+  margin-top: 1.4em;
+}
+
+#results h1:first-child,
+#results h2:first-child,
+#results h3:first-child {
+  margin-top: 0;
+}
+
+#results p,
+#results li {
+  line-height: 1.65;
+}
+
+#results a {
+  color: #1f5137;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#results blockquote {
+  margin: 18px 0;
+  padding: 12px 16px;
+  border-left: 4px solid #8b4513;
+  background: #fff8f0;
+  color: #4b5563;
+}
+
+#results table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+#results th,
+#results td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+#results th {
+  color: #1f5137;
+  background: #f0f6f1;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 48px 16px;
+  }
+
+  #results {
+    padding: 18px;
+  }
+
+  #results table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
